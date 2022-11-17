@@ -30,9 +30,9 @@ int main()
 		for (j = 0; j < N_TX; j++)
 		{
 			H_R[i][j] = channel_R[k];
-	        H_I[i][j] = channel_I[k];
+	       		H_I[i][j] = channel_I[k];
 
-	        k++;
+	        	k++;
 
 	    }
 
@@ -70,7 +70,7 @@ int main()
 	for (i = 0; i < N_TX; i++)
 	{
 		fscanf(gold, "%f %f\n", &s_gold_R[i], &s_gold_I[i]);    // Reading golden symbol to compare with the estimated symbol
-	    printf("%f + %fi\t", s_gold_R[i], s_gold_I[i]);
+	    	printf("%f + %fi\t", s_gold_R[i], s_gold_I[i]);
 
 	}
 
@@ -110,7 +110,7 @@ int main()
 	for(i = 0; i < N_TX; i++)
 	{
 		symbol_diff_R[i] = abs(s_gold_R[i] - temps_hat_R[i]);
-	    symbol_diff_I[i] = abs(s_gold_I[i] - temps_hat_I[i]);
+	    	symbol_diff_I[i] = abs(s_gold_I[i] - temps_hat_I[i]);
 
 	    //printf("%f + %fi\t", symbol_diff_R[i], symbol_diff_I[i]);
 
