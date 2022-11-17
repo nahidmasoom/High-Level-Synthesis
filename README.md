@@ -1,7 +1,5 @@
 # High-Level-Synthesis
 
-Massive MIMO Communications
-
 Multiple-Input Multiple-Output (MIMO) increases the capacity of a radio link by exploiting multipath propagation by using multiple transmitting and receiving antennas. It is becoming increasingly common as part of wireless communications standards, including Wireless Local Area Network (WLAN), Evolved High Speed Packet Access (HSPA+),
 and Long-Term Evolution (LTE). In Fifth-Generation (5G) wireless systems, the short wavelengths result in smaller antenna dimensions, and the base station equipped with hundreds of antenna elements that serve tens of user equipment simultaneously in the same frequency band leads to MIMO as massive which provides significantly higher spectral efficiency and link reliability than traditional, small-scale MIMO systems. However, the price for the enhanced spectral efficiency is increased signal processing complexity which grows exponentially with modulation alphabets and antennas in the system with optimal Maximum Likelihood (ML) algorithms. In the MIMO uplink phase, data at the base station are recovered with less complexity using near-optimal linear equalizers, such as Zero-Forcing (ZF) or Minimum Mean Square Error (MMSE). However, These equalization schemes typically rely on centralized processing which results in excessive computational complexity and interconnects bandwidth between the baseband processing unit and the Radio Frequency (RF) chains. Equalizers based on a decentralized architecture can mitigate these complexity and bandwidth bottlenecks.
 
