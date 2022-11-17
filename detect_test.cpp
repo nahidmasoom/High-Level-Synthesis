@@ -16,7 +16,6 @@ int main()
 	for(i = 0; i < length; i++)
 	{
 	    fscanf(ch, "%f %f\n", &channel_R[i], &channel_I[i]);
-
 	}
 
 	fclose(ch);
@@ -31,10 +30,8 @@ int main()
 		{
 			H_R[i][j] = channel_R[k];
 	       		H_I[i][j] = channel_I[k];
-
-	        	k++;
-
-	    }
+			k++;
+	    	}
 
 	}
 
@@ -51,15 +48,6 @@ int main()
 	}
 
 	fclose(signal);
-
-	//YTYPE y_R[N_RX], y_I[N_RX];
-
-	for (i = 0; i < N_RX; i++)
-	{
-		//y_R[i] = signal_R[i];
-		//y_I[i] = signal_I[i];
-
-	}
 
 	float s_gold_R[N_TX], s_gold_I[N_TX];
 
